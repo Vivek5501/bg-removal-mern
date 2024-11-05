@@ -16,16 +16,16 @@ const Header = () => {
                 <p className='my-6 text-[15px] text-gray-500'>A background removal tool that allows users<br className='max-sm:hidden' /> to upload images and remove backgrounds with a single click.</p>
                 <div>
                     <input onChange={e => removeBG(e.target.files[0])} type="file" id="upload1" accept='image/*' hidden />
-                    <label htmlFor='upload1' className='inline-flex gap-3 px-8 py-3.5 rounded-full  cursor-pointer bg-gradient-to-r from-violet-600 to-fuchsia-500 m-auto hover:scale-105 transition-all duration-700'>
+                    <label htmlFor='upload1' className='inline-flex gap-3 px-8 py-3.5 rounded-full  cursor-pointer bg-blue-400 m-auto hover:scale-105 transition-all duration-700'>
                         <img width={20} src={assets.upload_btn_icon} alt="" />
                         <p className='text-white text-sm'>Upload your image</p>
                     </label>
                 </div>
             </div>
             {/* -------- Right Side -------- */}
-            <div className='w-full max-w-md'>
+            {/* <div className='w-full max-w-md'>
                 <img src={assets.header_img} alt="" />
-            </div>
+            </div> */}
         </div>
     )
 }
