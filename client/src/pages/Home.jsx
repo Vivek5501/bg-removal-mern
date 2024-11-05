@@ -11,7 +11,7 @@ const Home = () => {
             <Header />
             <Steps />
             <BgSlider />
-            <Testimonials />
+            {/* <Testimonials /> */}
             <Upload />
         </>
     )
